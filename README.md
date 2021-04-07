@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @jeziellopes
 - 👀 I’m interested in Software Development, Clean Architecture, DDD, TDD
 - 🌱 I’m currently learning React.js (web) | Flutter, Dart (mobile)
-- 💞️ I’m looking to collaborate on Front-End, Full-Stack, DevOps
+- 💞️ I’m looking to collaborate on UX, Front-End, Back-End, Infrastructure
 - 📫 How to reach me https://www.linkedin.com/in/jezielcarvalho/
 
 <!---
