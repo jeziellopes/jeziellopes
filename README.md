@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @jeziellopes
-- 👀 I’m interested in Software Development, Clean Architecture, DDD, TDD
-- 🌱 I’m currently focusing on Fullstack Engineering with Node, React & AWS
+- 👀 I’m interested in Software Engineering, Clean Architecture, DDD, BDD, TDD
+- 🌱 I’m currently focusing on Fullstack Engeneering with Node, TypeScript, React & AWS
 - 💞️ I’m looking to collaborate on UX, Front-End, Back-End, DevOps & Cloud Infrastructure
 - 📫 How to reach me https://www.linkedin.com/in/jezielcarvalho/
 
