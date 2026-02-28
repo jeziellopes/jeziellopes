@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Jeziel Carvalho
 
-## 🚀 Senior Software Engineer | Distributed Systems | Product-Driven Engineering
+## 🚀 Full Stack Software Engineer | Distributed Systems | Product-Driven Engineering
 
 I design and build scalable, resilient systems with strong architectural foundations, observability-first mindset, and real business impact.
 
