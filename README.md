@@ -1,50 +1,68 @@
 # 👋 Hi, I'm Jeziel Carvalho
 
-## 🚀 Senior Software Engineer | Fullstack | Distributed Systems
+## 🚀 Senior Software Engineer | Distributed Systems | Product-Driven Engineering
 
-I design and build scalable, resilient systems with strong architectural foundations and real business impact.
+I design and build scalable, resilient systems with strong architectural foundations, observability-first mindset, and real business impact.
 
 ---
 
 ## 🧠 What I Focus On
 
-- 🏗 Distributed systems & event-driven architecture
-- 🔁 Async workflows with idempotency & resilience patterns
+- 🏗 Distributed & event-driven systems
+- 🔁 Reliable async workflows (idempotency, retries, backpressure)
+- 📈 Observability-first engineering (metrics, logs, tracing)
+- ⚙️ Scalable infrastructure & orchestration
 - 🧩 Clean Architecture, DDD & SOLID principles
-- 🧪 Testable systems (TDD mindset)
-- 📊 Observability & performance optimization
-- 💡 Product-oriented engineering
+- 💡 Engineering aligned with product & revenue growth
 
 ---
 
 ## 🛠 Tech Stack
 
-### Backend
+### 🧠 Backend
 
 <p>
-  <img src="https://skillicons.dev/icons?i=nodejs,typescript,postgres,redis,rabbitmq" />
+  <img src="https://skillicons.dev/icons?i=nodejs,nestjs,typescript,postgres,redis,rabbitmq" />
 </p>
 
-### Frontend
+---
+
+### 🎨 Frontend
 
 <p>
   <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" />
 </p>
 
-### Cloud & DevOps
+---
+
+### ☁️ Cloud & Orchestration
 
 <p>
-  <img src="https://skillicons.dev/icons?i=aws,docker,githubactions" />
+  <img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform" />
+</p>
+
+---
+
+### 📊 Observability & Monitoring
+
+<p>
+  <img src="https://skillicons.dev/icons?i=prometheus,grafana" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Jaeger-66C2A5?style=for-the-badge&logo=jaeger&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white" />
 </p>
 
 ---
 
 ## 🎯 Current Phase
 
-- Hardening async systems with idempotency patterns  
-- Scaling services based on queue load  
-- Strengthening observability (logs, metrics, tracing)  
-- Designing systems aligned with product growth & revenue loops  
+- Hardening async systems with idempotency & resilience patterns  
+- Scaling services based on queue load & traffic patterns  
+- Strengthening distributed tracing & metrics visibility  
+- Designing systems aligned with product growth loops  
+- Improving reliability using SRE principles  
 
 ---
 
@@ -53,7 +71,8 @@ I design and build scalable, resilient systems with strong architectural foundat
 - High-scale backend systems  
 - SaaS platforms  
 - AI-powered applications  
-- Architecture & system design  
+- Architecture & system design discussions  
+- Platform engineering challenges  
 
 ---
 
@@ -67,4 +86,4 @@ I design and build scalable, resilient systems with strong architectural foundat
 
 ---
 
-> “Build systems that survive growth.”
+> "Great software is not about code — it's about building systems that survive growth."
