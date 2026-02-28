@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Jeziel Carvalho
+# 👋 Hi, I'm Jeziel Lopes C.
 
 ## 🚀 Full Stack Software Engineer | Distributed Systems | Product-Driven Engineering
 
