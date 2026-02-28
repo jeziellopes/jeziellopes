@@ -4,6 +4,10 @@
 
 I design and build scalable, resilient systems with strong architectural foundations, observability-first mindset, and real business impact.
 
+<a href="https://github.com/jeziellopes">
+    <img src="https://komarev.com/ghpvc/?username=jeziellopes&style=for-the-badge">
+</a>
+
 ---
 
 ## 🧠 What I Focus On
