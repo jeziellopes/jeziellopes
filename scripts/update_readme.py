@@ -60,21 +60,19 @@ def build_projects_section(token: str) -> str:
     ]
     top = sorted(public, key=score_repo, reverse=True)[:TOP_PROJECTS_COUNT]
 
-    rows = []
+    bullets = []
     for r in top:
         name = r["name"]
         url = r["html_url"]
-        desc = (r.get("description") or "").replace("|", "\\|")
+        desc = (r.get("description") or "").rstrip(".")
         stars = r.get("stargazers_count", 0)
-        forks = r.get("forks_count", 0)
-        rows.append(f"| [{name}]({url}) | {desc} | ⭐ {stars} | 🍴 {forks} |")
+        star_str = f" ⭐ {stars}" if stars > 0 else ""
+        bullets.append(f"- **[{name}]({url})**{star_str} — {desc}.")
 
     lines = [
-        "## 🚀 Featured Projects",
+        "### What I've shipped lately",
         "",
-        "| Project | Description | Stars | Forks |",
-        "|---------|-------------|-------|-------|",
-        *rows,
+        *bullets,
     ]
     return "\n".join(lines)
 
@@ -129,18 +127,17 @@ def build_oss_section(token: str) -> str:
             break
 
     if not contributions:
-        return "## 🤝 OSS Contributions\n\n_No recent external contributions found._"
+        return "### Recent OSS\n\n_No recent external contributions found._"
 
-    rows = [
-        f"| [{title}]({pr_url}) | [{repo}]({repo_url}) | {status} |"
+    STATUS_ICON = {"✅ Merged": "merged", "🔄 Open": "open", "❌ Closed": "closed"}
+    bullets = [
+        f"- {status} **[{title}]({pr_url})** into [{repo}]({repo_url})"
         for title, pr_url, repo, repo_url, status in contributions
     ]
     lines = [
-        "## 🤝 OSS Contributions",
+        "### Recent OSS",
         "",
-        "| PR | Repository | Status |",
-        "|----|-----------|--------|",
-        *rows,
+        *bullets,
     ]
     return "\n".join(lines)
 
@@ -154,10 +151,7 @@ def build_stats_section() -> str:
         f"&hide_border=true"
         f"&theme=dark"
     )
-    return (
-        "## 📊 GitHub Stats\n\n"
-        f'<p>\n  <img src="{url}" />\n</p>'
-    )
+    return f'<img src="{url}" />'
 
 
 def rewrite_zone(content: str, zone: str, new_body: str) -> str:
