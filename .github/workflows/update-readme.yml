@@ -1,0 +1,42 @@
+# Automatically updates README.md dynamic zones daily via GitHub API.
+#
+# Required secret:
+#   GH_TOKEN — Personal Access Token with scopes: repo, read:user
+#   (The repo scope allows reading private contribution counts via
+#    github-readme-stats count_private=true, and authenticates API calls
+#    to avoid rate limiting. No write access to other repos is needed.)
+
+name: Update README
+
+on:
+  schedule:
+    - cron: "0 6 * * *"  # daily at 06:00 UTC
+  workflow_dispatch:       # allow manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run update script
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python scripts/update_readme.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: update profile README [skip ci]"
+          git push
