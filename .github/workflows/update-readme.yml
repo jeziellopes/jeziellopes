@@ -26,12 +26,12 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: go.mod
+          go-version: stable
 
-      - name: Run update script
+      - name: Run livemark
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: go run scripts/update_readme.go
+        run: go run github.com/jeziellopes/livemark@v0.1.0 --username jeziellopes
 
       - name: Commit and push if changed
         run: |
