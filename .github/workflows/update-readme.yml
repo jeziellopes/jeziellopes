@@ -2,9 +2,9 @@
 #
 # Required secret:
 #   GH_TOKEN — Personal Access Token with scopes: repo, read:user
-#   (The repo scope allows reading private contribution counts via
-#    github-readme-stats count_private=true, and authenticates API calls
-#    to avoid rate limiting. No write access to other repos is needed.)
+#   (Authenticates API calls to avoid rate limiting and enables
+#    filtering private repos from OSS contributions. No write
+#    access to other repos is needed.)
 
 name: Update README
 
@@ -23,15 +23,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Go
+        uses: actions/setup-go@v5
         with:
-          python-version: "3.12"
+          go-version-file: go.mod
 
       - name: Run update script
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: python scripts/update_readme.py
+        run: go run scripts/update_readme.go
 
       - name: Commit and push if changed
         run: |

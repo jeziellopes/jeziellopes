@@ -19,8 +19,5 @@ I build scalable, resilient systems with an observability-first mindset — dist
 - ✅ Merged **[feat(copilot): cross-platform PreToolUse hook via rtk hook (VS Code + Copilot CLI + Windows)](https://github.com/rtk-ai/rtk/pull/605)** into [rtk-ai/rtk](https://github.com/rtk-ai/rtk)
 <!-- OSS_END -->
 
-<!-- STATS_START -->
-<img src="https://github-readme-stats.vercel.app/api?username=jeziellopes&show_icons=true&count_private=true&hide_border=true&theme=dark" />
-<!-- STATS_END -->
-
-[linkedin.com/in/jezielcarvalho](https://www.linkedin.com/in/jezielcarvalho/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jezielcarvalho/)
+[![jeziellopes.dev](https://img.shields.io/badge/jeziellopes.dev-000?style=flat-square&logo=vercel&logoColor=white)](https://jeziellopes.dev)
