@@ -39,7 +39,6 @@ I have a passion for designing and building scalable, resilient systems with str
 
 | PR | Repository | Status |
 |----|-----------|--------|
-| [chore(main): release 0.2.0](https://github.com/clistack/claude-init/pull/1) | [clistack/claude-init](https://github.com/clistack/claude-init) | ✅ Merged |
 | [feat(copilot): cross-platform PreToolUse hook via rtk hook (VS Code + Copilot CLI + Windows)](https://github.com/rtk-ai/rtk/pull/605) | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | ✅ Merged |
 <!-- OSS_END -->
 

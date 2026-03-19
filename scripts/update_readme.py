@@ -100,10 +100,15 @@ def build_oss_section(token: str) -> str:
             continue
         seen.add(pr_api_url)
 
-        # The events API returns a minimal PR object — fetch the full details
+        # The events API returns a minimal PR object — fetch the full details.
+        # This also lets us check whether the repo is private and skip it.
         try:
             pr = gh_get(pr_api_url.replace(API_BASE, ""), token)
         except Exception:
+            continue
+
+        # Skip PRs in private repos — they must never appear on the public profile
+        if pr.get("base", {}).get("repo", {}).get("private", True):
             continue
 
         pr_url = pr.get("html_url", f"https://github.com/{repo_name}/pull/{pr_number}")
