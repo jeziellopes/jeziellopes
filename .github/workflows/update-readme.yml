@@ -1,17 +1,16 @@
-# Automatically updates README.md dynamic zones daily via GitHub API.
+# Automatically updates README.md dynamic zones daily and on livemark release.
 #
 # Required secret:
 #   GH_TOKEN — Personal Access Token with scopes: repo, read:user
-#   (Authenticates API calls to avoid rate limiting and enables
-#    filtering private repos from OSS contributions. No write
-#    access to other repos is needed.)
 
 name: Update README
 
 on:
+  repository_dispatch:
+    types: [livemark-release]
   schedule:
-    - cron: "0 6 * * *"  # daily at 06:00 UTC
-  workflow_dispatch:       # allow manual trigger from GitHub UI
+    - cron: "0 2 * * *"  # 23:00 UTC-3
+  workflow_dispatch:
 
 jobs:
   update:
@@ -31,7 +30,7 @@ jobs:
       - name: Run livemark
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: go run github.com/jeziellopes/livemark@v0.1.0 --username jeziellopes
+        run: go run github.com/jeziellopes/livemark@latest --username jeziellopes
 
       - name: Commit and push if changed
         run: |
