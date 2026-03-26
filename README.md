@@ -1,6 +1,6 @@
 # Hi, I'm Jeziel 👋
 
-I build scalable, resilient systems with an observability-first mindset — distributed infra, TypeScript, Rust, and real business impact.
+I build scalable, resilient systems with an observability-first mindset — distributed infra, TypeScript, React, Node.js, Rust, Go and real business impact.
 
 <a href="https://github.com/jeziellopes"><img src="https://komarev.com/ghpvc/?username=jeziellopes&style=flat-square&color=grey"></a>
 
