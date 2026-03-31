@@ -7,9 +7,9 @@ I build scalable, resilient systems with an observability-first mindset — dist
 <!-- PROJECTS_START -->
 ### What I've shipped lately
 
+- **[trading-engine](https://github.com/jeziellopes/trading-engine)** — Real-time trading engine simulator with live Binance market data, built with React 19.2, Vite 8, and the React Compiler.
 - **[livemark](https://github.com/jeziellopes/livemark)** — Keep your GitHub profile README alive — self-updating zones powered by the GitHub API. Zero deps, written in Go.
 - **[cv](https://github.com/jeziellopes/cv)** ⭐ 1 — A free, open-source resume generator. Edit cv.json, run one command, get a pixel-perfect HTML file and a print-ready PDF — no third-party login, no subscription, no watermark.
-- **[idempo](https://github.com/jeziellopes/idempo)** ⭐ 4 — A production-grade distributed systems reference built as a real-time tactical arena game — where the idempotency token is the game's core resource.
 - **[vscdb-fix](https://github.com/jeziellopes/vscdb-fix)** ⭐ 35 — Repair tool for VS Code Copilot Chat sessions that disappear due to corrupted session index in state.vscdb.
 <!-- PROJECTS_END -->
 
