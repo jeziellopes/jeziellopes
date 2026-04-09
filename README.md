@@ -16,7 +16,7 @@ I build scalable, resilient systems with an observability-first mindset — dist
 <!-- OSS_START -->
 ### Recent OSS
 
-- 🔄 Open **[feat(copilot): add rtk init --agent copilot support](https://github.com/rtk-ai/rtk/pull/728)** into [rtk-ai/rtk](https://github.com/rtk-ai/rtk)
+- 🔄 Open **[feat(init): complete Copilot lifecycle - uninstall, idempotency, show_config](https://github.com/rtk-ai/rtk/pull/728)** into [rtk-ai/rtk](https://github.com/rtk-ai/rtk)
 - ✅ Merged **[feat(copilot): cross-platform PreToolUse hook via rtk hook (VS Code + Copilot CLI + Windows)](https://github.com/rtk-ai/rtk/pull/605)** into [rtk-ai/rtk](https://github.com/rtk-ai/rtk)
 <!-- OSS_END -->
 
