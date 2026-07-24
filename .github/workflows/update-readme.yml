@@ -1,7 +1,7 @@
 # Automatically updates README.md dynamic zones daily and on livemark release.
 #
 # Required secret:
-#   GH_TOKEN — Personal Access Token with scopes: repo, read:user
+#   LIVEMARK_TOKEN — Personal Access Token with scopes: repo, read:user
 
 name: Update README
 
@@ -29,7 +29,7 @@ jobs:
 
       - name: Run livemark
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.LIVEMARK_TOKEN }}
         run: go run github.com/jeziellopes/livemark@latest --username jeziellopes
 
       - name: Commit and push if changed
